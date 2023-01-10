@@ -240,6 +240,29 @@ footer{
 }
 
 footer img{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
+    filter: invert();
+}
+footer .redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px    ;
+}
+footer a{
+    padding: 10px;
+}
+footer .derechos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer h4{
+    margin-bottom: 5px;
+}
+footer p{
+    margin: 5px;
 }
