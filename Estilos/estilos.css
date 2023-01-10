@@ -1,0 +1,245 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;;
+    background-color: #eee;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+h2{
+    font-size: 1em;
+    font-weight: bold
+}
+
+h3{font-size: 15px;}
+
+h4{
+    font-size: 1.4em;
+    margin: 20px 5px;
+    text-align: left;
+    font-weight: bold;
+    text-align: center;
+}
+
+h5{
+    padding: 5px;
+    font-size: 1em;
+}
+span{
+    font-weight: bold;
+}
+p{
+    font-size: 14px;
+    margin: 15px 5px;
+
+}
+.borde{
+    margin: 10px 20px;
+    border: 0;
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 20%);
+    padding: 35px;
+}
+
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    background-color:  transparent;
+    padding: 1em;
+}
+/* Parte que hace que el scroll funcione**/
+header.sticky{
+    background-color: rgb(30 30 30);
+    
+}
+header.activo{
+    background-color: rgb(30 30 30);
+}
+header .contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+header .logo:hover{
+    color:  rgba(255, 255, 255, 0.473);
+}
+header .a{
+    color: white;
+}
+header .a:hover{
+    color: rgba(255, 255, 255, 0.473);
+}
+
+header svg{
+    width: 2em;
+    height: 2em;
+}
+
+header .button{
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 0;
+}
+
+header .button:hover{
+    color: rgba(255, 255, 255, 0.473);
+}
+
+header .ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+header .nav{
+    width: 100%;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+/* Parte que hace que el menú hamburguesa funcione**/
+header .nav.activo{
+    opacity: 1;
+    height: auto;
+    background-color: rgb(30 30 30);
+}
+header .li{
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+
+#inicio{
+    height: 100vh;
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.9)
+    )
+    ,url(https://media.admagazine.com/photos/61e5acc706c10ae95c71b902/3:2/w_2532,h_1688,c_limit/New-York-skyline.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+}
+
+#inicio .contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+}
+#inicio .logo{
+    border-radius: 50%;
+}
+
+#informacionsobremi{
+    color: black;
+    margin-bottom: 100px;
+}
+
+#informacionsobremi .informacion-basica{
+    margin-top: 30px;
+}
+
+#habilidades{
+    padding: 0;
+    color: black;
+    margin-bottom: 100px;
+}
+#habilidades .lenguajes{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+#habilidades .frameworks-y-library{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#habilidades img{
+    height: 60px;
+    width: 60px;
+    margin: 15px;
+}
+#experiencia{
+    margin-bottom: 100px;
+}
+#experiencia .carta1{
+    margin-bottom: 50px;
+}
+#experiencia h5{
+    color: white;
+    border: 5px;
+    background-color: rgb(40, 40, 40);
+    padding: 50px;
+    text-align: center;
+}
+#contacto{
+    margin-bottom: 100px;
+}
+#contacto form button,
+#contacto form input,
+#contacto form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid rgb(30 30 30);
+}
+
+#contacto form button{
+    background-color: rgb(40 40 40);
+    color: white;
+    border: 0;
+}
+
+footer{
+    background-color: rgb(30 30 30);
+    color: white;
+}
+
+footer img{
+    height: 30px;
+    width: 30px;
+}
