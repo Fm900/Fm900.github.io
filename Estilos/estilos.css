@@ -233,6 +233,13 @@ header .li{
     color: white;
     border: 0;
 }
+#contacto form button:hover,
+#contacto form button:focus{
+    background-color: rgb(207, 207, 207);
+    color: rgb(40 40 40);
+    transition: background-color 0.5s ease-in-out;
+    outline: none;
+}
 
 footer{
     background-color: rgb(30 30 30);
