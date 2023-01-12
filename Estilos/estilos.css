@@ -273,3 +273,12 @@ footer h4{
 footer p{
     margin: 5px;
 }
+
+@media (min-width:720px){
+    header {
+        position: fixed;
+    }
+    header .button{
+        display: none;
+    }
+}   
