@@ -17,7 +17,9 @@ const aplicar = mql => {
     })
 }
 addEventListener('resize',() => aplicar(mql));
-aplicar(mql);
+addEventListener('DOMContentLoaded', () => aplicar(mql));
+
+
 
 window.addEventListener('scroll', () => {
     header.classList.toggle('sticky', window.scrollY > 643)
