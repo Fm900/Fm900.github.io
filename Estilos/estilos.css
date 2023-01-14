@@ -8,6 +8,7 @@
 
 html{
     scroll-behavior: smooth;
+    padding: 0;
 
 }
 
@@ -24,7 +25,7 @@ h1{
     font-weight: bold;
 }
 h2{
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bold
 }
 
@@ -63,83 +64,80 @@ p{
 }
 
 header{
+    background-color: transparent;
     width: 100%;
+    padding:0em;
     position: fixed;
-    background-color:  transparent;
-    padding: 1em;
-}
-/* Parte que hace que el scroll funcione**/
-header.sticky{
-    background-color: rgb(30 30 30);
-    
 }
 header.activo{
     background-color: rgb(30 30 30);
 }
+header.sticky{
+    background-color: rgb(30 30 30);
+}
+header a{
+    color: white;
+}
+
 header .contenedor{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    padding-top: 5px;
 }
 header .logo{
-    color: white;
-    display: flex;
-    align-items: center;
+    margin: 1em;
 }
 header .logo:hover{
-    color:  rgba(255, 255, 255, 0.473);
-}
-header .a{
-    color: white;
-}
-header .a:hover{
     color: rgba(255, 255, 255, 0.473);
 }
 
-header svg{
-    width: 2em;
-    height: 2em;
+header .svg{
+    height: 2.5em;
+    width: 2.5em;
 }
 
 header .button{
     display: block;
-    cursor: pointer;
+    margin: 1em;
     background-color: transparent;
     color: white;
-    border: 0;
+    border: none;
+    cursor: pointer;
 }
-
 header .button:hover{
     color: rgba(255, 255, 255, 0.473);
 }
+header .nav{
+    display: none;
+    background-color: transparent;
+    width: 100%;
 
+    
+}
+header .nav.activo{
+    display: block;
+    
+}
 header .ul{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: column;    
+    justify-content: center;
     align-items: center;
-    margin: 30px 0px;
-}
-
-header .nav{
-    width: 100%;
-    transition: opacity 1s ease-out;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-}
-/* Parte que hace que el menú hamburguesa funcione**/
-header .nav.activo{
-    opacity: 1;
-    height: auto;
-    background-color: rgb(30 30 30);
+    padding: 10px;
 }
 header .li{
-    padding: 10px 0px;
-    font-size: 20px;
+    padding: .9em;
 }
 
+header .a{
+    font-size: 1em;
+    font-weight: bold;
+}
+header .a:hover{
+    color: rgba(255, 255, 255, 0.473);
+}
 
 #inicio{
     height: 100vh;
@@ -176,7 +174,7 @@ header .li{
     margin-bottom: 100px;
 }
 
-#informacionsobremi .informacion-basica{
+#informacionsobremi .info-basica{
     margin-top: 30px;
 }
 
@@ -202,6 +200,7 @@ header .li{
     margin: 15px;
 }
 #experiencia{
+    flex-direction: column;
     margin-bottom: 100px;
 }
 #experiencia .carta1{
@@ -274,11 +273,35 @@ footer p{
     margin: 5px;
 }
 
-@media (min-width:720px){
-    header {
-        position: fixed;
+@media screen and (min-width:750px){
+    h1{
+        font-size: 3.5em;
+        font-weight: bold;
     }
     header .button{
         display: none;
     }
-}   
+    header .nav{
+        width: auto;
+        padding: 0;
+    }
+    header .ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #informacionsobremi .datos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #experiencia .contenedor{
+        display: flex;
+        justify-content: center;
+    }
+    #habilidades h5{
+        margin-left: 30px;
+    }
+
+}
