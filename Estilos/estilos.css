@@ -293,9 +293,15 @@ footer p{
     }
     #informacionsobremi .datos{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
-
+    #informacionsobremi .sobre-mi{
+        max-width: 50%;
+    }
+    #informacionsobremi .info-basica{
+        margin: 0;
+        max-width: 50%;
+    }
     #experiencia .contenedor{
         display: flex;
         justify-content: center;

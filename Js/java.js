@@ -6,6 +6,23 @@ window.addEventListener('scroll',() => {
     header.classList.toggle('sticky',window.scrollY > 640)
 })
 
+function myFunction(x) {
+    if (x.matches) { 
+        nav.classList.toggle('activo');
+    } else {
+        button.addEventListener('click', () => {
+            nav.classList.toggle('activo')
+            header.classList.toggle('activo')
+        });
+    }
+}
+
+var x = window.matchMedia("(min-width: 750px)")
+x.addListener(myFunction)
+myFunction(x) 
+
+
+/*
 const mql = matchMedia('(min-width:750px)')
 const aplicar = mql =>{
     mql.matches
@@ -20,6 +37,7 @@ const aplicar = mql =>{
 
 addEventListener('resize',() => aplicar(mql));
 addEventListener('DOMContentLoaded',() => aplicar(mql));
+*/
 
 
 
