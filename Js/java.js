@@ -6,29 +6,14 @@ window.addEventListener('scroll',() => {
     header.classList.toggle('sticky',window.scrollY > 640)
 })
 
-function myFunction(x) {
-    if (x.matches) { 
-        nav.classList.toggle('activo');
-    } else {
-        button.addEventListener('click', () => {
-            nav.classList.toggle('activo')
-            header.classList.toggle('activo')
-        });
-    }
-}
-
-var x = window.matchMedia("(min-width: 750px)")
-x.addListener(myFunction)
-myFunction(x) 
-
-
-/*
-const mql = matchMedia('(min-width:750px)')
+const mql = matchMedia('(min-width:800px)')
 const aplicar = mql =>{
     mql.matches
         ?
-        nav.classList.toggle('activo')
+        nav.classList.add('activo')
+        
         :
+        nav.classList.remove('activo');
         button.addEventListener('click', () => {
             nav.classList.toggle('activo')
             header.classList.toggle('activo')
@@ -37,7 +22,29 @@ const aplicar = mql =>{
 
 addEventListener('resize',() => aplicar(mql));
 addEventListener('DOMContentLoaded',() => aplicar(mql));
+
+
+
+
+/*
+let myMediaQuery = window.matchMedia('(min-width: 750px)');
+function widthChangeCallback(myMediaQuery) { 
+    if(myMediaQuery.matches) 
+        {
+            nav.classList.add('activo');
+        } else {
+            
+            button.addEventListener('click', () => {
+                nav.classList.toggle('activo')
+                header.classList.toggle('activo')
+            })
+        }
+};
+
+myMediaQuery.addEventListener('change', widthChangeCallback);
+widthChangeCallback(myMediaQuery);
 */
+
 
 
 
