@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="Estilos/estilos.css">
     <!--  Icono de pagina -->
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Mi-Presentación" />
+    <meta property="og:type" content="Curriculum vitae" />
+    <meta property="og:url" content="https://github.com/Fm900/ticmas-practicas" />
+    <meta property="og:image" content="https://resizer.iproimg.com/unsafe/880x/filters:format(webp)/https://assets.iprofesional.com/assets/jpg/2022/01/530304.jpg" />
+    <meta property="og:description" content="Hola!! Yo soy Timothy, desarrollador Web e Ingeniero Informático, este es mi Curriculum vitae." />
+
     <title>Mi Presentación</title>
 </head>
 <body>
@@ -27,7 +34,7 @@
             <nav class="nav">
                 <ul class="ul">
                     <li class="li"><a href="#inicio" class="a">Inicio</a></li>
-                    <li class="li"><a href="#informacionsobremi" class="a">Sobre Mi</a></li>
+                    <li class="li"><a href="#informacionsobremi" class="a">Información</a></li>
                     <li class="li"><a href="#habilidades" class="a">Habilidades</a></li>
                     <li class="li"><a href="#experiencia" class="a">Experiencia</a></li>
                     <li class="li"><a href="#contacto" class="a">Contacto</a></li>
@@ -47,18 +54,20 @@
 
     <section id="informacionsobremi">
         <div class="contenedor">
+            <h4>Información</h4>
             <div class="borde">
             <div class="datos">
                 <div class="info-basica">
-                    <h4 > Información Básica</h4>
-                    <p><span>Edad: </span> 24 años.</p>
+                    <h5> Información básica</h5>
+                    <p><span>Edad: </span> 30 años.</p>
                     <p><span>Nacionalidad: </span> Estadounidense.</p>
                     <p><span>Reside: </span> Argentina.</p>
                     <p><span>Dirección: </span>1234, Av. Corrientes, CABA, Argentina.</p>
                 </div>
                 <div class="sobre-mi">
-                    <h4> Sobre mí</h4>
-                    <p>Hola!! Yo soy Timothy desarrollador Web e Ingeniero Informático. En mis tiempos libres me gusta investigar sobre temas de tecnología para poder ampliar mi conocimiento, por otra parte me gusta pasar tiempo con mis amigos y compañeros. Me gustaría formar parte de un proyecto a gran escala que tenga como objetivo ayudar a las personas y solucionar problemas de la vida cotidiana.</p>
+                    <h5> Sobre mí</h5>
+                    <p>Hola!! Yo soy Timothy, desarrollador Web e Ingeniero Informático. 
+                        En mis tiempos libres me gusta investigar sobre temas de tecnología para poder ampliar mi conocimiento, por otra parte me gusta pasar tiempo con mis amigos y compañeros. Me gustaría formar parte de un proyecto a gran escala que tenga como objetivo ayudar a las personas y solucionar problemas de la vida cotidiana.</p>
                 </div>
                 
             </div>
@@ -93,23 +102,22 @@
             <div class="borde">
                 <div class="carta1">
                     <h5>Desarrollador Frontend</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat animi numquam, ab corporis excepturi mollitia culpa officiis atque, expedita, unde rem vitae ad eum voluptatem aut dolore itaque eos earum!
-                    Sit, aliquid reiciendis corrupti nam delectus accusamus iusto sapiente architecto harum impedit? Eius, doloribus. Repellendus impedit, harum mollitia sequi et quos consequatur saepe, nesciunt, neque voluptate dolores id nihil voluptates?</p>
+                    <p>Durante un año me desenvolví como desarrollador fronted en una empresa llamada Bild Studio. Me especialicé como creador de código testeable, maquetado, diseñador de proyectos web y como creador de aplicaciones móviles.</p>
                 </div>
             </div>
             <div class="borde">
                 <div class="carta2">
                     <h5>Desarrollador Backend </h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A suscipit magni reiciendis. Repellendus odit, veritatis fugit quae aspernatur ab expedita dolores, ea, debitis dolor deserunt error delectus sint explicabo provident!
-                    Autem, itaque officiis nisi a corporis suscipit. Quisquam aut odit architecto cumque itaque voluptate ullam nisi exercitationem minus. Enim harum necessitatibus nemo, placeat ipsum explicabo ipsam nostrum rem tempore fugiat.</p>
+                    <p>Durante dos años estuve trabajando en Valens, empresa enfocada al desarrollo backend. Durante este tiempo mis principales obligaciones eran realizar pruebas para la detección de errores en diferentes aplicaciones, supervisión del funcionamiento de apps webs, creación de código y bibliotecas como herramientas.</p>
                 </div>
             </div>
 
             <div class="borde">
                 <div class="carta3">
                     <h5>Data Analyst</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore minus iste totam optio ducimus, in ipsam omnis tempora veniam quia quam mollitia sunt, unde aperiam magnam vitae praesentium error incidunt.
-                    Minima blanditiis quaerat fugiat autem voluptates dolorem quo doloribus numquam facilis nemo qui dolore, exercitationem esse maxime eum sed? Consequatur repudiandae ipsum id. Laboriosam nemo fugiat aut sint, distinctio obcaecati?</p>
+                    <p>
+                        Recientemente, me incorporé al equipo de HuCap, para poder trabajar como Data Analyst. Mis habilidades en este ámbito no son muy amplias, por lo cual dentro de la empresa me ocupo de realizar auditorias, automatizar procesos, consultas y validar código durante el transcurso del proyecto.
+                    </p>
                 </div>
             </div>
         </div>
@@ -121,9 +129,14 @@
                 <div class="enviar-un-email">
                     <form>
                         <p>
-                            <label>Nombre Completo</label>
+                            <label>Nombres</label>
                             <input type="text" name="nombre" required>
                         </p>
+                        <p>
+                            <label>Apellidos</label>
+                            <input type="text" name="apellidos" required>
+                        </p>
+                        
                         <p>
                             <label>Asunto</label>
                             <input type="text" name="asunto"required>
@@ -132,11 +145,11 @@
                             <label>Email</label>
                             <input type="email" name="email"required>
                         </p>
-                        <p>
+                        <p class="block">
                             <label>Mensaje</label>
                             <textarea maxlength="700" required ></textarea>
                         </p>
-                        <p>
+                        <p class="block">
                             <button id="boton-de-contacto"type="submit">Enviar</button>
                         </p>
                     </form>
