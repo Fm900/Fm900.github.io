@@ -12,15 +12,15 @@ const aplicar = mql =>{
         ?(nav.classList.add('activo'),
         header.classList.remove('activo')
 
-        ):nav.classList.remove('activo');
+        ):(
+            nav.classList.remove('activo'),
             button.addEventListener('click', () => {
                 nav.classList.toggle('activo')
                 header.classList.toggle('activo')
-            });
+            })
+        )
 }
-
 addEventListener('resize',() => aplicar(mql));
 addEventListener('DOMContentLoaded',() => aplicar(mql));
-
 
 

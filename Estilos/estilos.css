@@ -63,6 +63,13 @@ p{
     margin: auto;
 }
 
+textarea {
+    height: 100px;
+    width: 100%;
+    resize: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
 header{
     background-color: transparent;
     width: 100%;
@@ -304,8 +311,12 @@ footer p{
     #experiencia .contenedor{
         display: flex;
         justify-content: center;
+        max-width: auto;
     }
     #habilidades h5{
         margin-left: 30px;
-    }    
+    }
+    #contacto{
+        width: 100%;
+    }
 }
