@@ -6,21 +6,19 @@ window.addEventListener('scroll',() => {
     header.classList.toggle('sticky',window.scrollY > 640)
 })
 
-const mql = matchMedia('(min-width:800px)')
-const aplicar = mql =>{
-    mql.matches
-        ?(nav.classList.add('activo'),
-        header.classList.remove('activo')
-
-        ):(
-            nav.classList.remove('activo'),
-            button.addEventListener('click', () => {
-                nav.classList.toggle('activo')
-                header.classList.toggle('activo')
-            })
-        )
+let media = window.matchMedia('(min-width: 800px)')
+function myFunction(media) {
+    if (media.matches) {
+        nav.classList.add('activo');
+        header.classList.remove('activo');
+    } else {
+        nav.classList.remove('activo');      
+    }
 }
-addEventListener('resize',() => aplicar(mql));
-addEventListener('DOMContentLoaded',() => aplicar(mql));
+media.addEventListener('change', myFunction);
+myFunction(media);
 
+button.addEventListener('click', () => {
+    nav.classList.toggle('activo')
+    header.classList.toggle('activo')});
 
