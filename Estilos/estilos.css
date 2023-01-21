@@ -223,6 +223,7 @@ header .a:hover{
     background-color: rgb(40, 40, 40);
     padding: 50px;
     text-align: center;
+    margin: 10px;
 }
 #contacto{
     margin-bottom: 100px;
