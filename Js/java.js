@@ -2,10 +2,12 @@ const button = document.querySelector('header .button')
 const nav = document.querySelector('header .nav')
 const header = document.querySelector('header')
 
+/* Menú-color*/
 window.addEventListener('scroll',() => {
     header.classList.toggle('sticky',window.scrollY > 640)
 })
 
+/* Media-Queries-Javascript*/
 let media = window.matchMedia('(min-width: 800px)')
 function myFunction(media) {
     if (media.matches) {
@@ -18,6 +20,7 @@ function myFunction(media) {
 media.addEventListener('change', myFunction);
 myFunction(media);
 
+/* Menú-Desplegable*/
 button.addEventListener('click', () => {
     nav.classList.toggle('activo')
     header.classList.toggle('activo')});
