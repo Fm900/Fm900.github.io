@@ -315,10 +315,17 @@ footer p{
     }
     #experiencia .contenedor{
         display: flex;
+        flex-flow: row wrap;
+        align-items: center;
         justify-content: center;
-        max-width: auto;
         text-align: center;
     }
+    #experiencia .carta1,
+    #experiencia .carta2,
+    #experiencia .carta3 {
+        width: 300px;
+    }
+
     #habilidades h5{
         margin-left: 30px;
         text-align: center;
