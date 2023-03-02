@@ -320,8 +320,8 @@ footer p{
         justify-content: center;
         text-align: center;
     }
-    #experiencia .carta1,
     #experiencia .carta2,
+    #experiencia .carta1,
     #experiencia .carta3 {
         width: 300px;
     }
